@@ -24,7 +24,20 @@ Note:  The notebook will open at the directory in which you launch the notebook 
 ```
 $ jupyter notebook
 ```
->my example
+```console
+Adafoo:~ bugclimber$ jupyter notebook
+[I 13:40:21.446 NotebookApp] Serving notebooks from local directory: /Users/bugclimber
+[I 13:40:21.446 NotebookApp] 0 active kernels 
+[I 13:40:21.446 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/?token=44cff804f386579f172ca44e41585c3b12749024c3c3bcda
+[I 13:40:21.446 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 13:40:21.447 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=44cff804f386579f172ca44e41585c3b12749024c3c3bcda
+[I 13:40:21.556 NotebookApp] Accepting one-time-token-authenticated connection from ::1
+```
+
 ```console
 reshama$ jupyter notebook
 [I 11:41:22.769 NotebookApp] Serving notebooks from local directory: /Users/reshamashaikh/_ds/metis
@@ -38,7 +51,16 @@ At terminal prompt:
  * control + c
  * type:  `y`
  
->my example 
+```console
+^C[I 13:43:34.900 NotebookApp] interrupted
+Serving notebooks from local directory: /Users/bugclimber
+0 active kernels 
+The Jupyter Notebook is running at: http://localhost:8888/?token=44cff804f386579f172ca44e41585c3b12749024c3c3bcda
+Shutdown this notebook server (y/[n])? y
+[C 13:43:36.548 NotebookApp] Shutdown confirmed
+[I 13:43:36.549 NotebookApp] Shutting down kernels
+```
+
 ```console
 ^C[I 11:43:35.486 NotebookApp] interrupted
 Serving notebooks from local directory: /Users/reshamashaikh/_ds/metis
