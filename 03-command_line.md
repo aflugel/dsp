@@ -20,14 +20,26 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > * show current working directory path = `echo $PATH`
-> > * creating a directory = 
-> > * deleting a directory = 
-> > * creating a file using `touch` command = 
+> > * show current working directory path = `pwd`
+> > * creating a directory = `mkdir [options] <directory_name>`
+> >   * make parent directories as needed = `-p`
+> >   * print out what the command is doing = `-v`
+> > * deleting a directory = `rmdir [options] <directory_name>`
+> > * creating a file using `touch` command = `touch [options] <filename>` 
+> >   * this changes the access/modification times on a file, or creates the file if it doesn't exist
 > > * deleting a file = 
 > > * renaming a file = 
-> > * listing hidden files = 
-> > * copying a file from one directory to another* assign read, write, and execute permissions= `chmod 755 <script>`
+> > * listing hidden files = `ls -a`
+> > * copying a file from one directory to another = `cp [options] <source> <destination>`
+> >   * copy directory and all files/directories it contains = `-r` (recursive)
+> > * assign read, write, and execute permissions= `chmod 755 <script>`
+> > * shebang (specifies interpreter/program for the rest of the script = `#!<path>` eg. `#!/bin/bash`
+> > * command substitution (save output as variable) = `variable=$(<commands>)` (only saves first line of output!)
+> > * make variable available to child processes = `export <variable>`
+> > * get manual for a command = `man <command>`
+> >   * search while in manual = `/` + `<search term>` + enter
+> >   * quit = `q`
+> >   * search all manual pages = `man -k <search term>`
 
 ---
 
