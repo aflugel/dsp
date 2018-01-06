@@ -27,8 +27,10 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 > > * deleting a directory = `rmdir [options] <directory_name>`
 > > * creating a file using `touch` command = `touch [options] <filename>` 
 > >   * this changes the access/modification times on a file, or creates the file if it doesn't exist
-> > * deleting a file = 
-> > * renaming a file = 
+> > * deleting a file = `rm [options] <filename>`
+> >   * delete directory and all files/directories it contains = `-r` (recursive)
+> >   * prompt before removing each file/directory = `-i` (interactive)
+> > * renaming a file = `mv <oldname> <newname>` within the same directory as source
 > > * listing hidden files = `ls -a`
 > > * copying a file from one directory to another = `cp [options] <source> <destination>`
 > >   * copy directory and all files/directories it contains = `-r` (recursive)
@@ -46,15 +48,14 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 ### Q2.  List Files in Unix   
 
 What do the following commands do:  
-`ls`  
-`ls -a`  
-`ls -l`  
-`ls -lh`  
-`ls -lah`  
-`ls -t`  
-`ls -Glp`  
+> > `ls` = list files and directories in current working directory (or other specified location)  
+> > `ls -a` = list INCLUDING hidden files/directories  
+> > `ls -l` = list in long format  
+> > `ls -lh` = list in long format with unit suffixes for file sizes  
+> > `ls -lah` = list in long format, with unit suffixes, and include hidden items  
+> > `ls -t` = list, sorting by time modified (recent first)  
+> > `ls -Glp` = list in long format, with colorized output, adds `/` after file name for directories
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
 
 ---
 
