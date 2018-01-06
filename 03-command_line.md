@@ -107,9 +107,12 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 ### Q4.  Xargs   
 
-What does `xargs` do? Give an example of how to use it.
+What does `xargs` do? Give an example of how to use it.  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `xargs` allows the user to run a command on every item in a list. By default, it takes the stdinput and echoes it.  If you pipe the output from another command or program into `xargs`, you can perform a task on each output item.  
+> > #### Example:
+> > If I take a bunch of screenshots on my Mac, I'll end up with a messy desktop cluttered with dated screenshot files (eg. 'screenshot 2017-12-23 at 5.54.37 PM.png'). I can run the following script to move all of those files to a folder called 'screenshots'.  
+> > `find screenshot*.png -print0 | xargs -0 -I{} mv {} screenshots/{}`
 
  
 
