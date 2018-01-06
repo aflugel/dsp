@@ -63,7 +63,17 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `-R` = recursively lists subdirectories as well  
+> > `-d` = displays only directories  
+> > `-g` = long format, minus owner name  
+> > `-m` = returns results as a comma-separated list  
+> > `-F` = lists with flagged file names
+> >   * directories end with `/`
+> >   * executables end with `*`
+> >   * symbolic links end with `@`
+> >   * sockets end with `=`
+> >   * whiteouts end with `%`
+> >   * FIFOs end with `|`
 
 ---
 
