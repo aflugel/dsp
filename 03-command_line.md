@@ -35,6 +35,10 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 > > * copying a file from one directory to another = `cp [options] <source> <destination>`
 > >   * copy directory and all files/directories it contains = `-r` (recursive)
 > > * assign read, write, and execute permissions= `chmod 755 <script>`
+> >   * `chmod` general:
+> >      * Who are we changing the permission for? [ugoa] - user (or owner), group, others, all
+> >      * granting or revoking the permission = indicated with either a plus (+) or minus (-)
+> >      * Which permission are we setting? - read (r), write (w) or execute (x)
 > > * shebang (specifies interpreter/program for the rest of the script = `#!<path>` eg. `#!/bin/bash`
 > > * command substitution (save output as variable) = `variable=$(<commands>)` (only saves first line of output!)
 > > * make variable available to child processes = `export <variable>`
@@ -42,7 +46,31 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 > >   * search while in manual = `/` + `<search term>` + enter
 > >   * quit = `q`
 > >   * search all manual pages = `man -k <search term>`
+> > * view contents of file = `cat <filename>`
+> >   * cancel = `^C`
+> > * view contents of a larger file piece by piece = `less <filename>`
+> >   * move up and down with arrow keys
+> >   * move forward by a whole page with spacebar
+> >   * move backward by a whole page with `b`
+> >   * quit = `q`  
 
+> > #### FILTERS  
+> > * `head [-number of lines to print] [path]` = prints first X lines of input (default =10)
+> > * `tail [-number of lines to print] [path]` = like head, but looks at the LAST lines
+> > * `sort [-options] [path]` = sorts output, default is alphabetical
+> > * `nl [-options] [path]` = numbers the lines
+> >   * `-s [string]` = specifies what to print after each number
+> >   * `-w [int]` = specifies how much padding before the numbers
+> > * `wc [-options] [path]` = word count (words, characters, lines)
+> >   * `-l` = lines only
+> >   * `-w` = words only
+> >   * `-l` = lines only
+> >   * `-m` = characters only
+> > * `cut [-options] [path]` = pulls specified data from input
+> >   * `-d '<string>'` = specifies separators (default is tab)
+> >   * `f <number(s)>` = specifies desired fields
+> > * `uniq [options] [path]` = removes duplicate lines (only when adjacent)
+> > * `tac [path]` = backwards `cat`, reads input last line -> first line
 ---
 
 ### Q2.  List Files in Unix   
