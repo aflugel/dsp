@@ -53,6 +53,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 > >   * move forward by a whole page with spacebar
 > >   * move backward by a whole page with `b`
 > >   * quit = `q`  
+> > * Find length of a variable (how many characters) = `${#variable}`
 
 > > #### FILTERS  
 > > * `head [-number of lines to print] [path]` = prints first X lines of input (default =10)
